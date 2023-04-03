@@ -1,0 +1,129 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --color-primary:crimson;
+    --color-white-light:#eee;
+    --color-black-main:#222;
+}
+
+body{
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--color-black-main);
+    /* overflow: hidden; */
+    background-color: var(--color-white-light);
+}
+
+.game-header{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 2px solid lightseagreen;
+    
+}
+
+.game-test,.game-alert{
+    color:lightseagreen;
+    text-shadow: 2px 2px 2px purple;
+    font-size: 4rem;
+    letter-spacing: 0.5px;
+    align-items: center;padding: 0 10rem;
+    position: relative;
+    
+}
+
+.game-test::after{
+    content: "";
+    position: absolute;
+    top: 2.3rem;
+    right: 5.9rem;
+    border-radius: 1px;
+    width: 3rem;
+    height: 4px;
+    background-color: lightseagreen;
+
+    
+
+}
+
+.game-test::before{
+    content: "";
+    position: absolute;
+    top: 2.3rem;
+    left: 5.9rem;
+    border-radius: 1px;
+    width: 3rem;
+    height: 4.5px;
+    background-color: lightseagreen;
+
+}
+    
+
+.game-btn{
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 2rem  2.5rem;
+    background-color: lightseagreen;
+    text-transform: uppercase;
+     margin-right: 10rem;
+     
+
+    
+}
+.game-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+    width: 50rem;
+    border-right:2px solid lightseagreen ;
+
+    
+    
+    
+}
+.game-input{
+    margin: 3rem 0;
+    border: none;
+    outline: none;
+    border: 2px solid lightseagreen;
+    padding: 2rem;
+    font-size: 5rem;
+    width: 300px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.image-title{
+    height: 350px;
+    width: 280px;
+    margin: 0 auto;
+}
+.container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
